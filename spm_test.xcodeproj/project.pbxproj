@@ -44,6 +44,7 @@
 		72DE82F9282C2CEC0007AA6B /* spm_test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = spm_test.h; sourceTree = "<group>"; };
 		72DE8303282C2D6D0007AA6B /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		72DE8305282C2D7A0007AA6B /* internal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = internal.swift; sourceTree = "<group>"; };
+		72DE832F282C40D90007AA6B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		99C97AB3BAEDDF69AEB0714D /* Pods-spm_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spm_test.debug.xcconfig"; path = "Target Support Files/Pods-spm_test/Pods-spm_test.debug.xcconfig"; sourceTree = "<group>"; };
 		C76B014E9055F26F3C3FD64F /* Pods-spm_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spm_test.release.xcconfig"; path = "Target Support Files/Pods-spm_test/Pods-spm_test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +73,7 @@
 		72DE82EC282C2CEC0007AA6B = {
 			isa = PBXGroup;
 			children = (
+				72DE832F282C40D90007AA6B /* Package.swift */,
 				72DE82F8282C2CEC0007AA6B /* spm_test */,
 				72DE82F7282C2CEC0007AA6B /* Products */,
 				40CEDE79DED5D06987393018 /* Pods */,
