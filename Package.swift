@@ -26,7 +26,7 @@ let package = Package(
             dependencies: [
                 .product(name: "Alamofire", package: "Alamofire")
             ],
-            path: "spm_test",
+            path: "spm_test"
         )
     ],
     swiftLanguageVersions: [.v5]
