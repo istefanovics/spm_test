@@ -8,6 +8,8 @@
 import Foundation
 
 public class TestClass {
+    public init() {}
+    
     public func testCall(completion: @escaping (String) -> ()?) {
         testCallInternal { result in
             completion(result)
