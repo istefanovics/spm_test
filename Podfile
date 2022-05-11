@@ -6,6 +6,10 @@ target 'spm_test' do
   use_frameworks!
 
   # Pods for spm_test
-  pod 'Alamofire', '~> 4.9'
+  pod 'Alamofire', '~> 5.0'
+  
+  target 'test' do
+    
+  end
 
 end

@@ -9,12 +9,12 @@ import Foundation
 import Alamofire
 
 func testCallInternal(completion: @escaping (String) -> ()?) {
-    Alamofire.request(URL(string: "https://httpbin.org/get")!,
+    AF.request(URL(string: "https://httpbin.org/get")!,
                       method: .get,
                       parameters: nil,
                       encoding: JSONEncoding.default,
                       headers: nil).responseJSON { response in
-        if let result = response.result.value {
+        if let result = response.value {
             let JSON = result as! NSDictionary
             
             completion(JSON["origin"] as! String)
