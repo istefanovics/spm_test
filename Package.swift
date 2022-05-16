@@ -10,9 +10,13 @@ let package = Package(
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
+        //.library(
+        //    name: "spm_test",
+        //    targets: ["spm_test"])
+
         .library(
             name: "spm_test",
-            targets: ["spm_test"])
+            targets: ["TestSDKFrameworkWrapper"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -29,10 +33,19 @@ let package = Package(
         //    ],
         //    path: "spm_test"
         //)
-        
+
         .binaryTarget(name: "spm_test",
                       url: "https://github.com/istefanovics/spm_test/raw/master/xcframework/spm_test.xcframework.zip",
                       checksum: "d8ef435e23f07cf76d6d0def530e00295ff10f058be7fa4b16845966a7cad9f9"),
+        .target(
+            name: "TestSDKFrameworkWrapper",         // <--- new wrapper
+            dependencies: [
+                .product(name: "Alamofire", package: "Alamofire")
+                .target(name: "spm_test")    // <-- reference the actual binary target here
+            ],
+            path: "Sources/TestWrapper",
+            publicHeadersPath: ""
+        ),
     ],
     swiftLanguageVersions: [.v5]
 )
