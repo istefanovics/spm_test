@@ -8,7 +8,7 @@ DerivedData
 *.bundle
 Index
 Logs
-xcframework
+xcframework/*.xcframework
 
 ## Various settings
 *.pbxuser

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Alamofire
+@_implementationOnly import Alamofire
 
 func testCallInternal(completion: @escaping (String) -> ()?) {
     AF.request(URL(string: "https://httpbin.org/get")!,

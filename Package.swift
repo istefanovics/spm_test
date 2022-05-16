@@ -21,13 +21,18 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "spm_test",
-            dependencies: [
-                .product(name: "Alamofire", package: "Alamofire")
-            ],
-            path: "spm_test"
-        )
+
+        //.target(
+        //    name: "spm_test",
+        //    dependencies: [
+        //        .product(name: "Alamofire", package: "Alamofire")
+        //    ],
+        //    path: "spm_test"
+        //)
+        
+        .binaryTarget(name: "spm_test",
+                      url: "https://pods.wup.hu/spm_test.xcframework.zip",
+                      checksum: "d8ef435e23f07cf76d6d0def530e00295ff10f058be7fa4b16845966a7cad9f9"),
     ],
     swiftLanguageVersions: [.v5]
 )
