@@ -40,7 +40,7 @@ let package = Package(
         .target(
             name: "TestSDKFrameworkWrapper",         // <--- new wrapper
             dependencies: [
-                .product(name: "Alamofire", package: "Alamofire")
+                .product(name: "Alamofire", package: "Alamofire"),
                 .target(name: "spm_test")    // <-- reference the actual binary target here
             ],
             path: "Sources/TestWrapper",
