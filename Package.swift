@@ -35,8 +35,8 @@ let package = Package(
         //)
 
         .binaryTarget(name: "spm_test",
-                      url: "https://github.com/istefanovics/spm_test/raw/master/xcframework/spm_test.xcframework.zip",
-                      checksum: "d8ef435e23f07cf76d6d0def530e00295ff10f058be7fa4b16845966a7cad9f9"),
+                      url: "https://github.com/istefanovics/spm_test/raw/master/xcframework/spm_test.xcframework2.zip",
+                      checksum: "f73f4c170617683386f85d017732d4653a99bbce14e88ce91bedb72fc2270151"),
 
         .target(
           name: "TestSDKTarget",
