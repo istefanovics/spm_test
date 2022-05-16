@@ -16,7 +16,7 @@ let package = Package(
 
         .library(
             name: "spm_test",
-            targets: ["TestSDKFrameworkWrapper"])
+            targets: ["TestSDKTarget"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -37,6 +37,14 @@ let package = Package(
         .binaryTarget(name: "spm_test",
                       url: "https://github.com/istefanovics/spm_test/raw/master/xcframework/spm_test.xcframework.zip",
                       checksum: "d8ef435e23f07cf76d6d0def530e00295ff10f058be7fa4b16845966a7cad9f9"),
+
+        .target(
+          name: "TestSDKTarget",
+          dependencies: [.target(name: "TestSDKFrameworkWrapper",
+                                 condition: .when(platforms: [.iOS]))],
+          path: "Sources/TestTarget"
+        ),
+
         .target(
             name: "TestSDKFrameworkWrapper",         // <--- new wrapper
             dependencies: [

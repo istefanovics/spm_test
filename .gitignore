@@ -9,6 +9,7 @@ DerivedData
 Index
 Logs
 xcframework/*.xcframework
+.Build
 
 ## Various settings
 *.pbxuser
