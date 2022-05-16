@@ -31,7 +31,7 @@ let package = Package(
         //)
         
         .binaryTarget(name: "spm_test",
-                      url: "https://pods.wup.hu/spm_test.xcframework.zip",
+                      url: "https://github.com/istefanovics/spm_test/raw/master/xcframework/spm_test.xcframework.zip",
                       checksum: "d8ef435e23f07cf76d6d0def530e00295ff10f058be7fa4b16845966a7cad9f9"),
     ],
     swiftLanguageVersions: [.v5]
