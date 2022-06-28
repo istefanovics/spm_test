@@ -34,9 +34,14 @@ let package = Package(
         //    path: "spm_test"
         //)
 
+        //.binaryTarget(name: "spm_test",
+        //              url: "https://github.com/istefanovics/spm_test/raw/master/xcframework/spm_test.xcframework2.zip",
+        //              checksum: "f73f4c170617683386f85d017732d4653a99bbce14e88ce91bedb72fc2270151"),
+
         .binaryTarget(name: "spm_test",
-                      url: "https://github.com/istefanovics/spm_test/raw/master/xcframework/spm_test.xcframework2.zip",
-                      checksum: "f73f4c170617683386f85d017732d4653a99bbce14e88ce91bedb72fc2270151"),
+                      url: "https://github.com/istefanovics/spm_test/raw/master/xcframework/My.xcframework.zip",
+                      checksum: "c8d9b193ba7aaa5e718fd5be103d04aeb7995094a56c10dd454127f54501d2ae"),
+
 
         .target(
           name: "TestSDKTarget",
